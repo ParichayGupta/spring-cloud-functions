@@ -11,6 +11,8 @@ This is an application to run spring cloud functions locally on system
 - it is mainly used in functional programming.
 - it has two parameters input and result we pass them as template class/ generic class.
 - It represents a function which takes in one argument and produces a result.
+  - T: denotes the type of the input argument
+  - R: denotes the return type of the function
 
 #### Command to make serverless request to Function interface annotated with @Bean
 
