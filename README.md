@@ -4,7 +4,7 @@ This is an application to run spring cloud functions locally on system
 
 ## API Reference
 
-### - Function<T,R> Interface
+### 1. Function<T,R> Interface
 
 - it is a functional interface present in the java.util package.
 - it is introduced in java 8.
@@ -26,12 +26,18 @@ This is an application to run spring cloud functions locally on system
 
 ___
 
-### - Consumer< T> interface
-- It is also a functional interface introduced in java 8 present in java.util package.
+### 2. Consumer< T> interface
+- It is also a functional interface introduced in java 8 which present in java.util package.
 - It represents an operation that accepts a single input argument and returns no result.
 - Unlike most other functional interfaces, Consumer is expected to operate via side-effects.
 
 
+
+### 3. Supplier< T> interface
+- It is also a functional interface introduced in java 8 which is present in java.util package.
+- It represents a function which does not take in any argument but produces a value of type T.
+- this functional interface takes in only one generic namely:-
+  - T: denotes the type of the result
 
 #### Command to make serverless request to Consumer interface annotated with @Bean
 
