@@ -52,5 +52,26 @@ ___
   curl -H "Content-Type: text/plain" localhost:8080/supply
 ```
 
+___
+
+### Second way of creating a function Endpoint
+
+- create a class and implement Function<T,R> interface.
+- override the appky(R) method and write the logic inside.
+- In the application.properties file write scan.package property.
+  - spring.cloud.function.scan.packages:com.spring.cloudfunctions 
+- In this scanario our endpoint will be class name.
+
+#### command to make serverless request to Function interface with class Hello
+
+```
+  curl -H "Content-Type: text/plain" localhost:8080/hello -d "message"
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `message` | `string` | **Required** message is a string which is considered as a input for the Function Interface |
+
+
 
 
