@@ -31,14 +31,6 @@ ___
 - It represents an operation that accepts a single input argument and returns no result.
 - Unlike most other functional interfaces, Consumer is expected to operate via side-effects.
 
-
-
-### 3. Supplier< T> interface
-- It is also a functional interface introduced in java 8 which is present in java.util package.
-- It represents a function which does not take in any argument but produces a value of type T.
-- this functional interface takes in only one generic namely:-
-  - T: denotes the type of the result
-
 #### Command to make serverless request to Consumer interface annotated with @Bean
 
 ```
@@ -51,6 +43,13 @@ ___
 
 
 ___
+
+### 3. Supplier< T> interface
+- It is also a functional interface introduced in java 8 which is present in java.util package.
+- It represents a function which does not take in any argument but produces a value of type T.
+- this functional interface takes in only one generic namely:-
+  - T: denotes the type of the result
+
 
 #### Command to make serverless request to Supplier interface annotated with @Bean
 
@@ -68,7 +67,7 @@ ___
   - spring.cloud.function.scan.packages:com.spring.cloudfunctions 
 - In this scanario our endpoint will be class name.
 
-#### command to make serverless request to Function interface with class Hello
+#### Command to make serverless request to Function interface with class Hello
 
 ```
   curl -H "Content-Type: text/plain" localhost:8080/hello -d "message"
